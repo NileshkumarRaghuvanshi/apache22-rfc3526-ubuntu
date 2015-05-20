@@ -1,0 +1,8 @@
+apache2 (2.2.22-1ubuntu1.9) precise-security; urgency=medium
+
+  * Hard-code 2048-bit and 3072-bit DH moduli from RFC 3526
+    - Replaces 512-bit and 1024-bit moduli
+    - Original patch: https://bitbucket.org/snippets/wneessen/grb8
+
+ -- Chris Markiewicz <effigies@gmail.com>  Wed, 20 May 2015 16:05:00 -0400
+
