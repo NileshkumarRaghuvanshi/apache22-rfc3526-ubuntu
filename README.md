@@ -10,8 +10,8 @@ or the Ubuntu maintainers incorporate a similar patch.
 Typical use:
 
     ./buildpkg.sh
-    PACKAGES=`dpkg -l | grep \ apache2 | awk '{ print $2 }' | sed -e 's/$/_2.2.22-1ubuntu1.9_amd64.deb/'`
-    sudo dpkg -i $PACKAGES
+    dpkg -l | grep \ apache2 | awk '{ print $2 }' | \
+        sed -e 's/$/_2.2.22-1ubuntu1.9_amd64.deb/' | xargs sudo dpkg -i
 
 Note that the script does call `sudo apt-get build-dep`, but otherwise
 operates without privileges.
