@@ -15,3 +15,9 @@ Typical use:
 
 Note that the script does call `sudo apt-get build-dep`, but otherwise
 operates without privileges.
+
+Patch with unique moduli
+------------------------
+Prior to running `buildpkg.sh` generate a `rfc3526.patch` with new moduli:
+
+    ./regenparams.sh
